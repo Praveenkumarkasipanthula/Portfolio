@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Portfolio — Category</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app"></div>
+
+<script src="js/content.js"></script>
+<script src="js/main.js"></script>
+<script>
+  renderCategoryPage();
+  // Keep the page title in sync with the selected category
+  (function () {
+    const slug = new URLSearchParams(window.location.search).get("cat");
+    const cat = categoryBySlug(slug) || CATEGORIES[0];
+    document.title = `Portfolio — ${cat.label}`;
+  })();
+</script>
+</body>
+</html>
