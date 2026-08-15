@@ -20,7 +20,7 @@
    ============================================================ */
 
 const SITE = {
-  name: "PRAVEEN KUMAR KASIPANTHULA",
+  name: "PRAVEEN KUMAR K",
   role: "ML Engineer — Applied & Forward-Deployed",
   tagline:
     "I build machine learning systems end to end — from the algorithm on the whiteboard to the model in production — and write down how, so anyone can audit the thinking.",
